@@ -13,7 +13,7 @@
 </div>
 
 <style lang="scss">
-  @import "../../../styles.scss";
+  @import "../../styles.scss";
   .wrapper {
     position: relative;
     width: 100%;
@@ -36,10 +36,10 @@
       position: absolute;
       background-color: $Gray;
       display: block;
-      width: 30px;
+      width: 1.875rem;
       height: 100%;
       top: 0px;
-      left: -1px;
+      left: -0.06rem;
       border-radius: 0.48rem;
     }
   }

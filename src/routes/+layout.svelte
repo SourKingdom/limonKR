@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Button from "$lib/components/ui/Button.svelte";
-  import UserIcon from "$lib/components/ui/UserIcon.svelte";
+  import Button from "$lib/ui/Button.svelte";
+  import UserIcon from "$lib/ui/UserIcon.svelte";
 </script>
 
 <div class="main">
@@ -46,8 +46,8 @@
   }
   :global(i) {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;

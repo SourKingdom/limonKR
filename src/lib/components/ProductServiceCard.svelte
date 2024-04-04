@@ -23,7 +23,7 @@
 </div>
 
 <style lang="scss">
-  @import "../../../styles.scss";
+  @import "../../styles.scss";
   .wrapper {
     background-color: $Gray;
     display: flex;
@@ -31,7 +31,7 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     width: 100%;
-    max-width: 315px;
+    max-width: 19.688rem;
     gap: 0.5rem;
   }
   .top {

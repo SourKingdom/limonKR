@@ -1,7 +1,7 @@
 <script lang="ts">
-    import ProductServiceCard from "$lib/components/components/ProductServiceCard.svelte";
-    import SearchInput from "$lib/components/components/SearchInput.svelte";
-    import Button from "$lib/components/ui/Button.svelte";
+    import ProductServiceCard from "$lib/components/ProductServiceCard.svelte";
+    import SearchInput from "$lib/components/SearchInput.svelte";
+    import Button from "$lib/ui/Button.svelte";
     import CategoriesSvg from '$lib/svg/categoriesSvg.svelte'
     import FilterSvg from "$lib/svg/filterSvg.svelte";
 
@@ -25,7 +25,7 @@
             <ProductServiceCard
                 title={"Logitech K380"}
                 type={"товар"}
-                countOfcomment = {567}
+                countOfcomment = {count}
                 img = {"https://img.mvideo.ru/Pdb/50174954b.jpg"}
                 rating = {100}
             />
@@ -34,7 +34,7 @@
 </div>
 
 <style lang="scss">
-    @import '../../../styles.scss';
+    @import '../../styles.scss';
     .search{
         padding: 1rem;
         border-radius: 0.5rem;
@@ -46,8 +46,8 @@
     .search__params{
         text-wrap: nowrap;
         display: flex;
-        gap: 10px;
-        height: 32px;
+        gap: 0.6rem;
+        height: 2rem;
     }
     .search__items{
         display: flex;

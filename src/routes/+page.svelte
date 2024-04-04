@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import Search from "../containers/main/search-section/search.svelte";
+  import Search from "../lib/containers/Search.svelte";
 </script>
 
 {#if $page.data.session?.user != null}

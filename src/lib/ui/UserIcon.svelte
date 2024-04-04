@@ -8,9 +8,9 @@
 
 <style lang="scss">
   .userImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
     overflow: hidden;
     > img {
       width: 100%;

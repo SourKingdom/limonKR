@@ -1,7 +1,7 @@
 <script>
   import { signIn, signOut } from "@auth/sveltekit/client";
   import { page } from "$app/stores";
-  import Button from "$lib/components/ui/Button.svelte";
+  import Button from "$lib/ui/Button.svelte";
 </script>
 
 <h1>Login page!</h1>
