@@ -1,8 +1,9 @@
 <script lang="ts">
-    import UserIcon from "$lib/components/ui/UserIcon.svelte";
-    
+  import { page } from "$app/stores";
 </script>
 
-<div class="">
-
-</div>
+{#if $page.data.session?.user != null}
+  <h1>Logged in</h1>
+{:else}
+  <h1>Not logged in</h1>
+{/if}
