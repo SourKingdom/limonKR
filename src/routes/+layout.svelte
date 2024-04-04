@@ -21,12 +21,14 @@
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400..800&display=swap");
   @import "../styles.scss";
+  :global(body) {
+    background-color: $Gray;
+  }
   .main {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: $Gray;
   }
   :global(body) {
     width: 100%;
@@ -69,7 +71,7 @@
     }
   }
   .wrapper {
-    max-width: 1350px;
+    max-width: 84.375rem;
     width: 100%;
     height: 100%;
     margin: 0 auto;
