@@ -1,6 +1,6 @@
 <script>
     import SearchSvg from "$lib/svg/searchSvg.svelte";
-    import ButtonWIthElement from "../ui/ButtonWIthElement.svelte";
+    import Button from "../ui/Button.svelte";
     export let placeholder = '' ;
 </script>
 
@@ -9,7 +9,7 @@
         <SearchSvg/>
         <input type="text" {placeholder}>
     </div>
-    <ButtonWIthElement>Найти</ButtonWIthElement>
+    <Button>Найти</Button>
 </div>
 
 <style lang="scss">

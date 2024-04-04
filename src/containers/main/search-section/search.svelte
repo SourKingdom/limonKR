@@ -1,7 +1,7 @@
 <script lang="ts">
     import ProductServiceCard from "$lib/components/components/ProductServiceCard.svelte";
     import SearchInput from "$lib/components/components/SearchInput.svelte";
-    import ButtonWIthElement from "$lib/components/ui/ButtonWIthElement.svelte";
+    import Button from "$lib/components/ui/Button.svelte";
     import CategoriesSvg from '$lib/svg/categoriesSvg.svelte'
     import FilterSvg from "$lib/svg/filterSvg.svelte";
 
@@ -10,14 +10,14 @@
 
 <div class="search">
     <div class="search__params">
-        <ButtonWIthElement>
+        <Button>
             <CategoriesSvg/>
             <span>Все категории</span>
-        </ButtonWIthElement>
-        <ButtonWIthElement>
+        </Button>
+        <Button>
             <FilterSvg/>
             <span>Фильтры</span>
-        </ButtonWIthElement>
+        </Button>
         <SearchInput placeholder={"Поиск по продукту"}/>
     </div>
     <div class="search__items">
