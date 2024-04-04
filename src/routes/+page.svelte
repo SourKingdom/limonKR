@@ -1,6 +1,5 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import UserIcon from "$lib/components/ui/UserIcon.svelte";
   import Search from "../containers/main/search-section/search.svelte";
 </script>
 
