@@ -24,8 +24,10 @@
 	"type": "module",
 	"dependencies": {
 		"@auth/core": "^0.28.2",
+		"@auth/firebase-adapter": "^1.5.2",
 		"@auth/sveltekit": "^0.14.2",
 		"eslint": "^8.57.0",
+		"firebase-admin": "^11.11.1",
 		"prettier": "^3.2.5"
 	}
 }
