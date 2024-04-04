@@ -1,4 +1,7 @@
 <script lang="ts">
+    import ButtonWIthElemt from "$lib/components/ui/ButtonWIthElemt.svelte";
+import UserIcon from "$lib/components/ui/UserIcon.svelte";
+
     
 </script>
 
@@ -32,9 +35,15 @@
     }
     
     header{
-        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.75rem 2rem;
         width: 100%;
         background-color: $Black;
+        :last-child{
+            display: flex;
+            gap:1rem;
+        }
     }
     .wrapper{
         max-width: 1350px;
@@ -46,6 +55,13 @@
 
 <div class="main">
     <header>
+        <div class="">
+
+        </div>
+        <div class="">
+            <ButtonWIthElemt>Добавить отзыв</ButtonWIthElemt>
+            <UserIcon url='https://p16-capcut-sign-va.ibyteimg.com/tos-maliva-v-be9c48-us/oQCBHfDbFA62WY3TA11MDC6pVxmIQJAfQl732E~tplv-nhvfeczskr-1:250:0.webp?lk3s=44acef4b&x-expires=1735045602&x-signature=gB8TYMK0%2B0GyrkG54Leouw9SL6M%3D'/>
+        </div>
     </header>
     <div class="wrapper">
         <slot></slot>

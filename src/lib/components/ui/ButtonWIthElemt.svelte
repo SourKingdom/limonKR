@@ -13,5 +13,6 @@
         background-color:$Primary;
         padding: 0.5rem 1rem;
         border-radius: 8px;
+        border: none;
     }
 </style>
