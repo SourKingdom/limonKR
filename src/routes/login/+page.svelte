@@ -10,5 +10,5 @@
   <Button on:click={() => signOut()}>Sign out</Button>
 {:else}
   <p>Not signed in.</p>
-  <Button on:click={() => signIn("google")}>Sign in</Button>
+  <Button on:click={() => signIn("google", { callbackUrl: '/' })}>Sign in</Button>
 {/if}
