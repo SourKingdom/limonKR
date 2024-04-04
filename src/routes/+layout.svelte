@@ -44,6 +44,18 @@
     font-family: "Rubik", sans-serif;
     font-weight: 400;
   }
+  :global(i) {
+    display: block;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  :global(h3) {
+    font-weight: 500;
+  }
 
   header {
     display: flex;
