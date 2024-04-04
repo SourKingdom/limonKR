@@ -1,4 +1,3 @@
-
 <script lang="ts">
   import { page } from "$app/stores";
   import UserIcon from "$lib/components/ui/UserIcon.svelte";

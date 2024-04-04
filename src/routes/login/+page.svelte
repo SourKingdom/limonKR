@@ -12,4 +12,3 @@
   <p>Not signed in.</p>
   <Button on:click={() => signIn("google")}>Sign in</Button>
 {/if}
-
