@@ -1,14 +1,12 @@
 <script>
-  import { signIn, signOut } from "@auth/sveltekit/client";
-  import { page } from "$app/stores";
+  import { signIn } from "@auth/sveltekit/client";
   import Button from "$lib/ui/Button.svelte";
-  import { redirect } from "@sveltejs/kit";
 </script>
   <div class="wrapper">
     <div class="window">
       <h1>Вход</h1>
       <Button on:click={() => signIn("google", { callbackUrl: '/' })}>Войти</Button>
-      <span>В данный момент поддерживается аутентификация толькуо через Google</span>
+      <span>В данный момент поддерживается аутентификация только через Google</span>
     </div>
   </div>
 

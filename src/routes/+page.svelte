@@ -7,7 +7,9 @@
 
 <main class="main">
   <Search />
-  <Button on:click={() => signOut()}>Sign out</Button>
+  {#if $page.data.session?.user}
+    <Button on:click={() => signOut()}>Sign out</Button>
+  {/if}
 </main>
 
 <style>
