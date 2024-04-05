@@ -1,16 +1,32 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import Button from "$lib/ui/Button.svelte";
   import UserIcon from "$lib/ui/UserIcon.svelte";
 </script>
+
+<!-- {#if $page.data.session?.user != null}
+  <h1>Logged in as {$page.data.session.user.name}</h1>
+{:else}
+  <h1>Not logged in</h1>
+{/if}
+<a href="/login"><h1>Go to login page</h1></a> -->
 
 <div class="main">
   <header>
     <div class=""></div>
     <div class="">
       <Button>Добавить отзыв</Button>
-      <UserIcon
-        url="https://p16-capcut-sign-va.ibyteimg.com/tos-maliva-v-be9c48-us/oQCBHfDbFA62WY3TA11MDC6pVxmIQJAfQl732E~tplv-nhvfeczskr-1:250:0.webp?lk3s=44acef4b&x-expires=1735045602&x-signature=gB8TYMK0%2B0GyrkG54Leouw9SL6M%3D"
-      />
+      {#if $page.data.session?.user == null}
+        <UserIcon
+          userUrl='/login'
+          url="https://p16-capcut-sign-va.ibyteimg.com/tos-maliva-v-be9c48-us/oQCBHfDbFA62WY3TA11MDC6pVxmIQJAfQl732E~tplv-nhvfeczskr-1:250:0.webp?lk3s=44acef4b&x-expires=1735045602&x-signature=gB8TYMK0%2B0GyrkG54Leouw9SL6M%3D"
+        />
+      {:else}
+        <UserIcon
+          userUrl='/me'
+          url="https://p16-capcut-sign-va.ibyteimg.com/tos-maliva-v-be9c48-us/oQCBHfDbFA62WY3TA11MDC6pVxmIQJAfQl732E~tplv-nhvfeczskr-1:250:0.webp?lk3s=44acef4b&x-expires=1735045602&x-signature=gB8TYMK0%2B0GyrkG54Leouw9SL6M%3D"
+        />
+      {/if}
     </div>
   </header>
   <div class="wrapper">

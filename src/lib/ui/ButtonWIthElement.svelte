@@ -10,6 +10,7 @@
 <style lang="scss">
     @import '../../styles.scss';
     button {
+        cursor: pointer;
         background-color:$Primary;
         padding: 0.5rem 1.5rem;
         border-radius: 0.5rem;
