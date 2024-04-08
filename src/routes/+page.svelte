@@ -1,17 +1,15 @@
 <script lang="ts">
   import { page } from "$app/stores";
+  import { signOut } from "@auth/sveltekit/client";
   import Search from "../lib/containers/Search.svelte";
+  import Button from "$lib/ui/Button.svelte";
 </script>
-
-{#if $page.data.session?.user != null}
-  <h1>Logged in as {$page.data.session.user.name}</h1>
-{:else}
-  <h1>Not logged in</h1>
-{/if}
-<a href="/login"><h1>Go to login page</h1></a>
 
 <main class="main">
   <Search />
+  {#if $page.data.session?.user}
+    <Button on:click={() => signOut()}>Sign out</Button>
+  {/if}
 </main>
 
 <style>
@@ -20,6 +18,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
     padding: 1rem;
   }
 </style>

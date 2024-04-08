@@ -1,10 +1,11 @@
-<script>
-  export let url = "";
+<script lang="ts">
+  export let url:string;
+  export let userUrl:string = '';
 </script>
 
-<div class="userImg">
+<a href={userUrl} class="userImg">
   <img src={url} alt="" />
-</div>
+</a>
 
 <style lang="scss">
   .userImg {
