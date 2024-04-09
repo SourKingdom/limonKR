@@ -4,8 +4,25 @@
     import Button from "$lib/ui/Button.svelte";
     import CategoriesSvg from '$lib/svg/categoriesSvg.svelte'
     import FilterSvg from "$lib/svg/filterSvg.svelte";
-
-    let count = 567;
+    
+    interface ProductServiceCard{
+        id: number;
+        title:string
+        type:string
+        countOfcomment:number
+        img:string
+        rating:number
+    }
+    let ProductService: ProductServiceCard[] = [
+        {
+            title:"Logitech K380",
+            id:1,
+            type:"товар",
+            countOfcomment:1,
+            img:"https://img.mvideo.ru/Pdb/50174954b.jpg",
+            rating:100,
+        }
+    ]
 </script>
 
 <div class="search">
@@ -21,13 +38,9 @@
         <SearchInput placeholder={"Поиск по продукту"}/>
     </div>
     <div class="search__items">
-        {#each Array(5) as star}
+        {#each ProductService as item}
             <ProductServiceCard
-                title={"Logitech K380"}
-                type={"товар"}
-                countOfcomment = {count}
-                img = {"https://img.mvideo.ru/Pdb/50174954b.jpg"}
-                rating = {100}
+                {...item}
             />
         {/each}
     </div>
